@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1>Inscription</h1>
+<fieldset>
+<legend>
+	Details du Compte
+</legend>
+<label for="user">Nom de l'uilisateur:</label>
+<input type="text" name="username" required id="user" placeholder="Username">
+
+<label for="pass">Mot de Passe:</label>
+<br>
+<input required type="password" name="password" id="pass" placeholder="Password">
+<label for="repass">Confirmer le Mot de Pass:</label>
+<br><input required type="password" name="password" id="repass" placeholder="Re-type password">
+<label for="m1">Email:</label>
+<input required type="Email" name="mail" id="m1" placeholder="example@email.com">
+</fieldset>
+<fieldset><legend>Details Personnels</legend>
+<label for="site">Site web:</label><input required type="url" name="s" id="site">
+<label for="age">age</label>
+<input type="number" name="nmbr" id="age"><label for="sale">Salaire<br>mensuel</label>
+<input type="range" name="r" id="sale" max="10000"> <label>Description:</label><textarea placeholder="Describe about yourself here"></textarea>
+<hr>
+<input type="checkbox" name="chx"><p>j'accepte les <a href="condition.html">Condtion Generales d'Utilisation</a> </p><button >j'accepte</button>
+</fieldset>
+
+</body>
+</html>

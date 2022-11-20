@@ -1,0 +1,25 @@
+			fieldset{margin-bottom: 15px;
+					box-shadow: 5px 5px 10px 1px steelblue,;
+					color: black;
+					}
+			input{border-radius: 20px;}
+
+			a: hover{font-style: italic;}
+
+			.lb{background-color: lightblue}
+
+			body{background: url(parcours.jpg) bottom no-repeat;}
+
+			div{text-align: center;}
+
+			h1{border: 1px solid steelblue;
+				box-shadow: 5px 5px 10px 8px,5px 5px 30px lightblue inset;
+				text-shadow: -2px -2px  lightblue;
+				border-radius: 120px 40px ;
+				color: steelblue;
+				text-align: center;
+				padding: 20px auto;
+				}
+			legend{
+    text-shadow: -2px -2px lightblue;
+    font-size: 1.2em;}

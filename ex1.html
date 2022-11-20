@@ -1,0 +1,71 @@
+<!DOCTYPE hgtml>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel ="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<form>
+	<h1 id="s1">RESERVATIONS</h1>
+	<form action="reserver.php" method="post" name="f1">
+		<fieldset >
+			<legend>Contact</legend>
+		<label for="in1">CONTACT:</label><br><input type="text" required id="in1" name="contact" class="lb" style="display: block;">
+		<label for="in2">Telephone:</label><br><input id="in2" type="tel" required pattern="[1-9]{2} [1-9]{6}" class="lb" name="telph" placeholder="98 852086" style="display: block;">
+		<label for="in3">Email:</label><br><input id="in3" required type="email" name="email" style="display: block;" class="lb">
+		</fieldset>
+
+		<fieldset>
+			<legend>type de billet</legend>
+			<input type="radio" name="r1" value="a1" id="r1"><label for="r1">aller simple</label><br>
+			<input type="radio" name="alkr retour" value="a2" name="r1" id="r2"><label>aller retour</label><br>
+			<a href="multi.html">multi destinations</a>
+		</fieldset>
+<fieldset>
+	<legend>destination</legend>
+		<label for="L1">de:</label>
+		<select name="de" id="L1">
+			<option value="RA"> abidjan </option>
+			<option value="FE">alger</option>
+			<option value="MA">amsterdam</option>
+			<option value="AG">bamako</option>
+			<option value ="TA">paris</option>
+		</select>
+
+	<label for="L2">vers:</label>
+		<select name="vers" id="L2">
+			<option value="RA"> abidjan </option>
+			<option value="FE">alger</option>
+			<option value="MA">amsterdam</option>
+			<option value="AG">bamako</option>
+			<option value ="TA">paris</option>
+	</select>
+</fieldset>
+	<fieldset><legend>dates</legend>
+		<label for="d1">date de depart</label><input class="lb" type="date" id="d1" name="date">
+		<label for="d2">date de depart</label><input class="lb"type="date" id="d2" name="date">
+		</fieldset>
+		<fieldset>
+			<legend>voyageurs</legend>
+			<label for="v1">addults(25+)</label><input type="number" id="v1" class="lb" name="adult" min="0" max="6">
+			<label for="v2">jeune(12-24)</label><input type="number" id="v2" class="lb" name="jeune" min="0" max="6">
+			<br>
+			<label for="v3">enfants:(2-11)</label><input type="number" id="v3" class="lb" name="jeune" min="0" max="6">
+			<label for="v4">bebes:(>2)</label><input type="number" id="v4" class="lb" name="bebe" min="0" max="6">
+			
+		</fieldset>
+		<fieldset><legend>type de payment</legend>
+			<label for="p1">payment carte de credit</label><input type="radio" name="c-credit" id="p1"><br>
+			<label for="p2">paiment e-dinar poste</label><input type="radio" name="c-credit" id="p2">
+		</fieldset>
+		<fieldset id="cen"><div><button type="reset"><img src="ok.png" ></button>
+						<button type="reset"><img src="cancel.png"></button></fieldset></div>
+
+
+	</form>
+
+</form>
+</body>
+</html>
